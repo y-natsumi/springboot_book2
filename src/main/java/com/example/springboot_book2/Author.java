@@ -17,7 +17,6 @@ public class Author {
     @Column(name = "author_name", nullable = false, unique = true)
     private String authorName;
 
-    // JPAで使用するためのデフォルトコンストラクタ
     protected Author() {}
 
     // コンストラクタ（著者名のみ指定）
