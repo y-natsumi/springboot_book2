@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>書籍登録</title>
+</head>
+<body>
+    <h1>書籍登録</h1>
+    <form action="/insert" method="post">
+        <table border="1">
+            <tr>
+                <th>書籍名</th>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <th>値段</th>
+                <td><input type="text" name="price"></td>
+            </tr>
+            <tr>
+                <th>著者</th>
+                <td><input type="text" name="author"></td>
+            </tr>
+        </table>
+        <p><input type="submit" value="登録"></p>
+    </form>
+</body>
+</html>

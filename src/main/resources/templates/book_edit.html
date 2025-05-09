@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>書籍更新</title>
+</head>
+<body>
+    <h1>書籍更新</h1>
+    <form action="/update" method="post">
+        <table border="1">
+            <tr>
+                <th>書籍コード</th>
+                <td><input type="text" name="code" readonly th:value="${bookCode}"></td>
+            </tr>
+            <tr>
+                <th>値段</th>
+                <td><input type="text" name="price" th:value="${bookPrice}"></td>
+            </tr>
+        </table>
+        <p><input type="submit" value="更新"></p>
+    </form>
+</body>
+</html>
