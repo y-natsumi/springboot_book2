@@ -9,6 +9,12 @@ CREATE TABLE books (
   author_id INT NOT NULL
 );
 
+著者テーブル作成
+CREATE TABLE authors (
+  author_id   INT AUTO_INCREMENT PRIMARY KEY,
+  author_name VARCHAR(255) NOT NULL UNIQUE
+);
+
 booksテーブルへデータインサート
 INSERT INTO books (book_name, book_price, author_id) VALUES
 ('Javaプログラミング基礎', 2500, 1),
